@@ -1,0 +1,29 @@
+[
+  {
+    "label": "home",
+    "link": ""
+  },
+  {
+    "label": "L'azienda",
+    "link": "azienda"
+  },
+  {
+    "label": "Arredamento",
+    "link": "arredamenti",
+    "children": [
+      { "label": "Cucine", "link": "#cucine" },
+      { "label": "Soggiorni", "link": "#soggiorni" },
+      { "label": "Bagni", "link": "#bagni" },
+      { "label": "Camere", "link": "#camere" },
+      { "label": "Camerette", "link": "#camerette" }
+    ]
+  },
+  {
+    "label": "Offerte",
+    "link": "offerte"
+  },
+  {
+    "label": "Contatti",
+    "link": "contatti"
+  }
+]

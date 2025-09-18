@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: libreBodoni-r;
+  src: url("/font/LibreBodoni-Regular.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: IBMPlexsans-l;
+  src: url("/font/IBMPlexSans-Light.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: IBMPlexsans-m;
+  src: url("/font/IBMPlexSans-Medium.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: IBMPlexsans-r;
+  src: url("/font/IBMPlexSans-Regular.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: IBMPlexsans-b;
+  src: url("/font/IBMPlexSans-Bold.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer components {
+  html {
+    font-size: 100%; /* 16px default */
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: system-ui;
+    -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-family: var(--font-ibmplex-r);
+  }
+  /* h1 and other to add default text size */
+  h1 {
+    font-size: clamp(2.5rem, 6vw, 3.75rem);
+    font-family: var(--font-librebodoni-r);
+  }
+  /* nomalization preferencies, don't touch */
+  button {
+    cursor: pointer;
+  }
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block; /* normalmente sono tutti elementi in-line */
+    max-width: 100%; /* si adattano al contenitore */
+    user-select: none; /* non possono essere selezionate/evidenziate */
+  }
+  section {
+    min-height: 100vh;
+  }
+
+  /* general section margin */
+  .marginx {
+    margin: 0 1rem;
+  }
+  @media (width >= 48rem /* 768px */) {
+    .marginx {
+      margin: 0 2rem;
+    }
+  }
+}
+
+@theme {
+  /* --color-green-600: #004818; */
+  /* --font-klavika-l: klavika-l, sans-serif; */
+
+  --color-red-700: #ee1d23;
+  --font-librebodoni-r: libreBodoni-r, serif;
+  --font-ibmplex-l: IBMPlexsans-l, sans-serif;
+  --font-ibmplex-m: IBMPlexsans-m, sans-serif;
+  --font-ibmplex-r: IBMPlexsans-r, sans-serif;
+  --font-ibmplex-b: IBMPlexsans-b, sans-serif;
+}
+
+@utility content-auto {
+  content-visibility: auto;
+}

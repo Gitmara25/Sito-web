@@ -1,0 +1,48 @@
+---
+import HamburgerBtn from "./HamburgerBtn.astro";
+
+interface Props {
+  classCSS: string;
+}
+const { classCSS = "" } = Astro.props;
+---
+
+<nav class=`${classCSS}`>
+  <HamburgerBtn client:load />
+  <div id='mobile-menu' class='hidden'>
+    <div><a href='/'>Home</a></div>
+    <div><a href='/azienda'>L'azienda</a></div>
+    <div><a href='/arredamenti'>Arredamento</a></div>
+    <div><a href='/offerte'>Offerte</a></div>
+    <div><a href='/contatti'>Contatti</a></div>
+  </div>
+</nav>
+
+<script>
+  // Simple state management
+  let isOpen = false;
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const hamburgerBtn = document.querySelector(".wrapper-menu");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    if (hamburgerBtn && mobileMenu) {
+      // Initial check
+      updateMenuVisibility();
+
+      // Listen for clicks on the hamburger button
+      hamburgerBtn.addEventListener("click", () => {
+        isOpen = !isOpen;
+        updateMenuVisibility();
+      });
+    }
+
+    function updateMenuVisibility() {
+      if (isOpen) {
+        mobileMenu?.classList.remove("hidden");
+      } else {
+        mobileMenu?.classList.add("hidden");
+      }
+    }
+  });
+</script>

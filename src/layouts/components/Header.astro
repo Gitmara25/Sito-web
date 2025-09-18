@@ -1,0 +1,27 @@
+---
+import NavDesktop from "./NavDesktop.astro";
+import maraLogo from "../../assets/images/MaraLogoBW.jpg";
+import NavMobile from "./NavMobile.astro";
+import NavbarHeader from "./NavbarHeader";
+---
+
+<header
+  class='flex flex-row justify-between items-center text-white bg-black marginx my-2'
+>
+  <div class='h-11 sm:h-14'>
+    <a href='/'>
+      <img
+        class='object-contain h-full w-full'
+        src={maraLogo.src}
+        alt='Mara Logo'
+      /></a
+    >
+  </div>
+
+  <NavbarHeader client:load />
+  <!-- <NavDesktop
+    link="home,l'azieda,arredamenti§cucine;soggiorni;bagni;camere;camerette,offerte,contatti"
+    classCSS='hidden md:flex'
+  />
+  <NavMobile classCSS='md:hidden' /> -->
+</header>
