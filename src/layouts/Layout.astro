@@ -1,7 +1,7 @@
 ---
 import Favicon from "./components/Favicon.astro";
 import MetadataSEO from "./components/MetadataSEO.astro";
-import Header from "./components/Header.astro";
+import Header from "./components/Header.tsx";
 import Footer from "./components/Footer.astro";
 
 import type { MetadescriptionType } from "../types/types";
@@ -22,7 +22,7 @@ import "../assets/css/main.css";
     <title>Mara Arredamenti</title>
   </head>
   <body>
-    <Header />
+    <Header client:load />
     <slot />
     <Footer />
   </body>

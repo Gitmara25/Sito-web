@@ -39,7 +39,7 @@
   body {
     font-family: system-ui;
     -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-size: clamp(1rem, 2vw, 1.2rem);
     background-color: var(--color-black);
     color: var(--color-white);
     font-family: var(--font-ibmplex-r);
@@ -82,11 +82,14 @@
   /* --font-klavika-l: klavika-l, sans-serif; */
 
   --color-red-700: #ee1d23;
+  --radius-mara: 12px;
   --font-librebodoni-r: libreBodoni-r, serif;
   --font-ibmplex-l: IBMPlexsans-l, sans-serif;
   --font-ibmplex-m: IBMPlexsans-m, sans-serif;
   --font-ibmplex-r: IBMPlexsans-r, sans-serif;
   --font-ibmplex-b: IBMPlexsans-b, sans-serif;
+
+  --ease-hamburgerBtn: cubic-bezier(0.54, -0.81, 0.57, 0.57);
 }
 
 @utility content-auto {
