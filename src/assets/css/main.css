@@ -46,7 +46,11 @@
   }
   /* h1 and other to add default text size */
   h1 {
-    font-size: clamp(2.5rem, 6vw, 3.75rem);
+    font-size: clamp(2.3rem, 6vw, 3.75rem);
+    font-family: var(--font-librebodoni-r);
+  }
+  h2 {
+    font-size: clamp(2rem, 6vw, 3rem);
     font-family: var(--font-librebodoni-r);
   }
   /* nomalization preferencies, don't touch */
@@ -63,7 +67,7 @@
     user-select: none; /* non possono essere selezionate/evidenziate */
   }
   section {
-    min-height: 100vh;
+    /* min-height: 100vh; */
   }
 
   /* general section margin */
@@ -81,7 +85,10 @@
   /* --color-green-600: #004818; */
   /* --font-klavika-l: klavika-l, sans-serif; */
 
-  --color-red-700: #ee1d23;
+  --color-red-700: #ac1b1b;
+  --color-red-200: #efc2bc;
+  --color-gray-800: #434343;
+  --color-gray-200: #d9d9d9;
   --radius-mara: 12px;
   --font-librebodoni-r: libreBodoni-r, serif;
   --font-ibmplex-l: IBMPlexsans-l, sans-serif;

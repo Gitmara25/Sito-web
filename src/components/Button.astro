@@ -1,6 +1,6 @@
 ---
 export interface Props {
-  type?: string;
+  type?: "1" | "2";
   to?: string;
 }
 
@@ -10,13 +10,13 @@ const { type = "1", to = "#" } = Astro.props;
 {
   type == "1" ? (
     <a href={to}>
-      <button class='bg-black p-4 text-white'>
+      <button class='bg-red-800 py-3 px-8 text-white rounded-mara font-ibmplex-m hover:bg-red-900 hover:text-red-200 transition-colors'>
         <slot />
       </button>
     </a>
   ) : (
     <a href={to}>
-      <button class='text-black hover:text-green-200 hover:underline'>
+      <button class='bg-red-200 py-3 px-8 text-red-800 rounded-mara font-ibmplex-m hover:bg-red-300 hover:text-red-900 transition-colors'>
         <slot />
       </button>
     </a>

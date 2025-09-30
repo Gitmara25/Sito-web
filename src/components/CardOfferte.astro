@@ -1,0 +1,56 @@
+---
+export interface Props {
+  img?: string;
+  title: string;
+  subtitle: string;
+  prezzoOriginale: string;
+  prezzoScontato: string;
+  to?: string;
+}
+
+const { img, title, subtitle, to, prezzoOriginale, prezzoScontato } =
+  Astro.props;
+---
+
+<!-- <a href={to}>
+  <div
+    class='bg-white rounded-mara w-[16rem] lg:w-[20rem] xl:w-[24rem]'
+  >
+    <div
+      class='rounded-mara px-8 pt-[70%] pb-[10%] xl:pt-[60%] bg-size-[140%] bg-center hover:bg-size-[130%] transition-[background-size] ease'
+      style={`background-image: url('/images/${img}');`}
+    >
+    </div>
+    <div class='text-black py-8 px-8'>
+      <p class='font-ibmplex-m'>{title}</p>
+      <p>{subtitle}</p>
+      <div class='flex gap-4 items-center'>
+        <p class='font-ibmplex-b'>{prezzoScontato}€</p>
+        <p class='font-ibmplex-l line-through text-gray-800 text-sm'>
+          {prezzoOriginale}€
+        </p>
+      </div>
+    </div>
+  </div>
+</a> -->
+<a href={to} class='row-span-2 grid grid-rows-subgrid'>
+  <div
+    class='bg-white rounded-mara w-[16rem] lg:w-[20rem] xl:w-[24rem] grid grid-rows-subgrid row-span-2 gap-4'
+  >
+    <div
+      class='rounded-mara px-8 pt-[70%] pb-[10%] xl:pt-[60%] bg-size-[140%] bg-center hover:bg-size-[130%] transition-[background-size] ease row-start-1'
+      style=`background-image: url('/images/${img}');`
+    >
+    </div>
+    <div class='text-black pb-8 px-8 row-start-2 space-y-2'>
+      <p class='font-ibmplex-m'>{title}</p>
+      <p>{subtitle}</p>
+      <div class='flex gap-4 items-center'>
+        <p class='font-ibmplex-b'>{prezzoScontato}€</p>
+        <p class='font-ibmplex-l line-through text-gray-800 text-sm'>
+          {prezzoOriginale}€
+        </p>
+      </div>
+    </div>
+  </div>
+</a>

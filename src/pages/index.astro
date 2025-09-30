@@ -1,9 +1,176 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+import Card from "../components/Card.astro";
+import CardOfferte from "../components/CardOfferte.astro";
+import Servizi from "./index/components/servizi.astro";
 ---
 
 <Layout metadescription='meta description for SEO, EDIT IT'>
-  <section>
-    <h1>Home</h1>
+  <!-- Landing -->
+  <section
+    class='min-h-screen bg-[url(/images/landing.jpg)] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center gap-4'
+  >
+    <h1 class='text-center leading-none marginx'>
+      Mara Arredamenti <span class='font-ibmplex-b'
+        ><br />stile e design per i tuoi interni</span
+      >
+    </h1>
+    <p class='text-center marginx'>
+      Dal 1900, realizziamo soluzioni d'arredo su misura che coniugano
+      funzionalità e design sofisticato
+    </p>
+    <div class='flex flex-col sm:flex-row items-center gap-4 sm:gap-16 marginx'>
+      <Button type='1' to='arredamenti'>Esplora la collezione</Button>
+      <Button type='2' to='offerte'>Offerte speciali </Button>
+    </div>
+  </section>
+
+  <!-- La nostra collezione -->
+  <section class='marginx mt-12 flex flex-col gap-4 items-center'>
+    <h2 class='text-center'>La nostra collezione</h2>
+    <p class='text-center'>
+      Una selezione di elementi per il tuo spazio di vita
+    </p>
+    <div
+      class='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 items-center justify-center gap-8 mb-8 mt-4'
+    >
+      <Card
+        img='card-cucina.webp'
+        title='Cucina'
+        subtitle='Il cuore pulsante della tua casa'
+        to='arredamenti#cucina'
+      />
+      <Card
+        img='card-soggiorno.webp'
+        title='Soggiorni'
+        subtitle='Spazi disegnati per il relax e connessioni'
+        to='arredamenti#soggiorno'
+      />
+      <Card
+        img='card-bagno.jpg'
+        title='Bagni'
+        subtitle='La tua oasi di benessere personale'
+        to='arredamenti#bagno'
+      />
+      <Card
+        img='card-camera.jpg'
+        title='Camere'
+        subtitle='Il vostro rifugio personale per il riposo'
+        to='arredamenti#camera'
+      />
+      <Card
+        img='card-cameretta.jpg'
+        title='Camerette'
+        subtitle='Spazi che crescono coi vostri figli'
+        to='arredamenti#cameretta'
+      />
+      <Card
+        img='card-complementi.jpg'
+        title='Complementi'
+        subtitle='Il tocco perfetto per la vostra casa'
+        to='arredamenti#complementi'
+      />
+    </div>
+    <Button type='1' to='arredamenti'>Vai all'arredamento</Button>
+  </section>
+
+  <!-- chi siamo -->
+  <section class='marginx my-16'>
+    <h2 class='text-center mb-4'>Chi siamo</h2>
+    <div class='columns-1 lg:columns-2'>
+      <div class='w-full h-full'>
+        <img
+          class='object-cover rounded-mara w-full h-full'
+          src='/images/chi-siamo.jpg'
+          alt='chi-siamo'
+        />
+      </div>
+      <div class='flex flex-col gap-8 break-inside-avoid'>
+        <p class='mt-8 lg:mt-4 text-justify'>
+          Da generazioni ci occupiamo di design. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolor
+        </p>
+        <div class='flex justify-around'>
+          <Servizi>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 24 24'
+              fill='currentColor'
+              class='size-10'
+            >
+              <path
+                fill-rule='evenodd'
+                d='M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z'
+                clip-rule='evenodd'></path>
+            </svg>
+            <p>Vendita arredi</p>
+          </Servizi>
+          <Servizi>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 24 24'
+              fill='currentColor'
+              class='size-10'
+            >
+              <path
+                d='M3.375 4.5C2.339 4.5 1.5 5.34 1.5 6.375V13.5h12V6.375c0-1.036-.84-1.875-1.875-1.875h-8.25ZM13.5 15h-12v2.625c0 1.035.84 1.875 1.875 1.875h.375a3 3 0 1 1 6 0h3a.75.75 0 0 0 .75-.75V15Z'
+              ></path>
+              <path
+                d='M8.25 19.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0ZM15.75 6.75a.75.75 0 0 0-.75.75v11.25c0 .087.015.17.042.248a3 3 0 0 1 5.958.464c.853-.175 1.522-.935 1.464-1.883a18.659 18.659 0 0 0-3.732-10.104 1.837 1.837 0 0 0-1.47-.725H15.75Z'
+              ></path>
+              <path d='M19.5 19.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z'></path>
+            </svg>
+            <p>Montaggio</p>
+          </Servizi>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- offerte -->
+  <section class='margix py-12 bg-red-700 flex flex-col items-center gap-4'>
+    <h2 class='text-center'>Offerte del momento</h2>
+    <p class='mb-8 text-center'>
+      Affrettati, offerta a tempo limitato <span
+        class='px-4 py-2 bg-white text-red-700 ml-4 rounded-mara inline-block mt-2 sm:mt-0'
+        >30 Luglio 2025</span
+      >
+    </p>
+
+    <!-- <div class='flex flex-col sm:flex-row mb-8 gap-8 sm:gap-16'> -->
+    <div
+      class='grid grid-cols-1 sm:grid-cols-2 gap-16 items-start grid-rows-subgrid'
+    >
+      <CardOfferte
+        title='Set di sedie toscane'
+        subtitle='6 Sedie di pelle e legno, legno e pelle, legno e pelle'
+        prezzoOriginale='2599'
+        prezzoScontato='1799'
+        img='offerte.jpg'
+        to='contatti'
+      />
+      <CardOfferte
+        title='Set di sedie toscane'
+        subtitle='6 Sedie di pelle e legno'
+        prezzoOriginale='2599'
+        prezzoScontato='1799'
+        img='offerte.jpg'
+        to='contatti'
+      />
+    </div>
+    <Button type='2' to='offerte'>Scopri le offerte</Button>
+  </section>
+
+  <!-- CTA -->
+  <section
+    class="bg-[url('/images/landing2.jpg')] bg-center bg-cover flex flex-col gap-4 items-center py-20"
+  >
+    <h2 class='text-center'>Vieni a parlare coi nostri esperti!</h2>
+    <Button type='1' to='contatti'>Contattaci</Button>
   </section>
 </Layout>
