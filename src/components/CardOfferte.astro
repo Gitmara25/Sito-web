@@ -5,11 +5,11 @@ export interface Props {
   subtitle: string;
   prezzoOriginale: string;
   prezzoScontato: string;
-  to?: string;
 }
 
-const { img, title, subtitle, to, prezzoOriginale, prezzoScontato } =
-  Astro.props;
+const { img, title, subtitle, prezzoOriginale, prezzoScontato } = Astro.props;
+
+const url = `/contatti?prod=${encodeURIComponent(title)}#contact-form-sito`;
 ---
 
 <!-- <a href={to}>
@@ -33,7 +33,7 @@ const { img, title, subtitle, to, prezzoOriginale, prezzoScontato } =
     </div>
   </div>
 </a> -->
-<a href={to} class='row-span-2 grid grid-rows-subgrid'>
+<a href={url} class='row-span-2 grid grid-rows-subgrid'>
   <div
     class='bg-white rounded-mara w-[16rem] lg:w-[20rem] xl:w-[24rem] grid grid-rows-subgrid row-span-2 gap-4'
   >

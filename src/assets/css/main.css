@@ -45,6 +45,7 @@
     font-family: var(--font-ibmplex-r);
   }
   /* h1 and other to add default text size */
+  .numeri,
   h1 {
     font-size: clamp(2.3rem, 6vw, 3.75rem);
     font-family: var(--font-librebodoni-r);
@@ -66,8 +67,9 @@
     max-width: 100%; /* si adattano al contenitore */
     user-select: none; /* non possono essere selezionate/evidenziate */
   }
-  section {
-    /* min-height: 100vh; */
+  ::selection {
+    background-color: var(--color-red-700);
+    color: var(--color-white);
   }
 
   /* general section margin */

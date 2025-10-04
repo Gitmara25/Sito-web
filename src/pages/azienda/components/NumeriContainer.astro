@@ -1,0 +1,13 @@
+---
+export interface Props {
+  anni: string;
+  inCosa: string;
+}
+
+const { anni, inCosa } = Astro.props;
+---
+
+<div class='flex flex-col'>
+  <p class='text-red-700 numeri'>{anni}+</p>
+  <p class=''>{inCosa}</p>
+</div>
