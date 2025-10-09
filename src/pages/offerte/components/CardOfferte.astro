@@ -12,16 +12,19 @@ const { img, title, subtitle, prezzoOriginale, prezzoScontato } = Astro.props;
 const url = `/contatti?prod=${encodeURIComponent(title)}#contact-form-sito`;
 ---
 
-<a href={url} class='row-span-2 grid grid-rows-subgrid'>
+<a href={url} class='block h-full w-fit mx-auto'>
+  <!-- Added w-fit and mx-auto -->
   <div
-    class='bg-white rounded-mara w-[16rem] lg:w-[20rem] xl:w-[24rem] grid grid-rows-subgrid row-span-2 gap-4'
+    class='bg-white rounded-mara w-[16rem] lg:w-[18rem] xl:w-[20rem] h-full flex flex-col'
   >
+    <!-- Added flex flex-col -->
     <div
-      class='rounded-mara px-8 pt-[70%] pb-[10%] xl:pt-[60%] bg-size-[140%] bg-center hover:bg-size-[130%] transition-[background-size] ease row-start-1'
+      class='rounded-mara pt-[70%] pb-[10%] xl:pt-[60%] h-8 px-8 bg-size-[140%] bg-center hover:bg-size-[130%] transition-[background-size] ease'
       style=`background-image: url('/images/${img}');`
     >
     </div>
-    <div class='text-black pb-8 px-8 row-start-2 space-y-2'>
+    <div class='text-black mt-4 pb-8 px-8 space-y-2 flex-grow'>
+      <!-- Added flex-grow -->
       <p class='font-ibmplex-m'>{title}</p>
       <p>{subtitle}</p>
       <div class='flex gap-4 items-center'>

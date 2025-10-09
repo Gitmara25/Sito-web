@@ -1,9 +1,165 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import ArredamentiCardContainer from "./components/ArredamentiCardContainer.astro";
+import CardArredamenti from "./components/CardArredamenti.astro";
+import SliderArredamenti from "./components/SliderArredamenti.astro";
 ---
 
+<style>
+  #arredamenti div {
+    margin-bottom: 4rem;
+  }
+</style>
+
 <Layout metadescription='meta description for SEO, EDIT IT'>
-  <section>
-    <h1>Arredamenti</h1>
+  <section id='arredamenti'>
+    <div
+      class='bg-[url("/images/landing2.jpg")] bg-center bg-cover flex flex-col gap-4 items-center py-8'
+    >
+      <h1 class='text-center'>Arredamenti</h1>
+      <p class='text-center'>
+        Scopri la nostra vasta collezione di mobili e accessori per la casa.
+      </p>
+    </div>
+
+    <div class='marginx'>
+      <!-- cucine -->
+      <div id='cucine'>
+        <h2 class='text-center'>Cucine</h2>
+        <ArredamentiCardContainer>
+          <CardArredamenti
+            title='Cucina'
+            description='Il cuore pulsante della tua casa'
+            img='card-cucina.webp'
+          />
+          <CardArredamenti
+            title='Cucina'
+            description='Il cuore pulsante della tua casa'
+            img='card-cucina.webp'
+          />
+          <CardArredamenti
+            title='Cucina'
+            description='Il cuore pulsante della tua casa'
+            img='card-cucina.webp'
+          />
+        </ArredamentiCardContainer>
+        <SliderArredamenti />
+      </div>
+
+      <!-- soggiorni -->
+      <div id='soggiorni'>
+        <h2 class='text-center'>Soggiorni</h2>
+        <ArredamentiCardContainer>
+          <CardArredamenti
+            title='Soggiorno'
+            description='Spazi disegnati per il relax e connessioni'
+            img='card-soggiorno.webp'
+          />
+          <CardArredamenti
+            title='Soggiorno'
+            description='Spazi disegnati per il relax e connessioni'
+            img='card-soggiorno.webp'
+          />
+          <CardArredamenti
+            title='Soggiorno'
+            description='Spazi disegnati per il relax e connessioni'
+            img='card-soggiorno.webp'
+          />
+        </ArredamentiCardContainer>
+        <SliderArredamenti />
+      </div>
+
+      <!-- bagni -->
+      <div id='bagni'>
+        <h2 class='text-center'>Bagni</h2>
+        <ArredamentiCardContainer>
+          <CardArredamenti
+            title='Bagno'
+            description='La tua oasi di benessere personale '
+            img='card-bagno.jpg'
+          />
+          <CardArredamenti
+            title='Bagno'
+            description='La tua oasi di benessere personale'
+            img='card-bagno.jpg'
+          />
+          <CardArredamenti
+            title='Bagno'
+            description='La tua oasi di benessere personale'
+            img='card-bagno.jpg'
+          />
+        </ArredamentiCardContainer>
+        <SliderArredamenti />
+      </div>
+
+      <!-- camere -->
+      <div id='camere'>
+        <h2 class='text-center'>Camere</h2>
+        <ArredamentiCardContainer>
+          <CardArredamenti
+            title='Camera'
+            description='Il vostro rifugio personale per il riposo'
+            img='card-camera.jpg'
+          />
+          <CardArredamenti
+            title='Camera'
+            description='Il vostro rifugio personale per il riposo'
+            img='card-camera.jpg'
+          />
+          <CardArredamenti
+            title='Camera'
+            description='Il vostro rifugio personale per il riposo'
+            img='card-camera.jpg'
+          />
+        </ArredamentiCardContainer>
+        <SliderArredamenti />
+      </div>
+
+      <!-- camerette -->
+      <div id='camerette'>
+        <h2 class='text-center'>Camerette</h2>
+        <ArredamentiCardContainer>
+          <CardArredamenti
+            title='Cameretta'
+            description='Spazi che crescono coi vostri figli'
+            img='card-cameretta.jpg'
+          />
+          <CardArredamenti
+            title='Cameretta'
+            description='Spazi che crescono coi vostri figli'
+            img='card-cameretta.jpg'
+          />
+          <CardArredamenti
+            title='Cameretta'
+            description='Spazi che crescono coi vostri figli'
+            img='card-cameretta.jpg'
+          />
+        </ArredamentiCardContainer>
+        <SliderArredamenti />
+      </div>
+
+      <!-- complementi -->
+      <div id='complementi'>
+        <h2 class='text-center'>Complementi</h2>
+        <ArredamentiCardContainer>
+          <CardArredamenti
+            title='Complemento'
+            description='Il tocco finale perfetto per la vostra casa'
+            img='card-complementi.jpg'
+          />
+          <CardArredamenti
+            title='Complemento'
+            description='Il tocco finale perfetto per la vostra casa'
+            img='card-complementi.jpg'
+          />
+          <CardArredamenti
+            title='Complemento'
+            description='Il tocco finale perfetto per la vostra casa'
+            img='card-complementi.jpg'
+          />
+        </ArredamentiCardContainer>
+        <SliderArredamenti />
+      </div>
+    </div>
   </section>
 </Layout>

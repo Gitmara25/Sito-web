@@ -1,0 +1,105 @@
+<style>
+  .swiper {
+    width: 100%;
+    height: 50vh;
+    border-radius: var(--radius-mara);
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+
+<div class='swiper mySwiper'>
+  <div class='swiper-wrapper'>
+    <div class='swiper-slide'>
+      <img src='images/card-bagno.jpg' alt='Slide 1' loading='lazy' />
+      <div class='swiper-lazy-preloader'></div>
+    </div>
+    <div class='swiper-slide'>
+      <img src='images/card-bagno.jpg' alt='Slide 2' loading='lazy' />
+      <div class='swiper-lazy-preloader'></div>
+    </div>
+    <div class='swiper-slide'>
+      <img src='images/card-bagno.jpg' alt='Slide 3' loading='lazy' />
+      <div class='swiper-lazy-preloader'></div>
+    </div>
+    <div class='swiper-slide'>
+      <img src='images/card-bagno.jpg' alt='Slide 4' loading='lazy' />
+      <div class='swiper-lazy-preloader'></div>
+    </div>
+  </div>
+  <div class='swiper-button-next'></div>
+  <div class='swiper-button-prev'></div>
+  <div class='swiper-pagination'></div>
+</div>
+
+<script>
+  import Swiper from "swiper";
+  import {
+    Autoplay,
+    EffectCreative,
+    // Pagination,
+    Navigation,
+  } from "swiper/modules";
+  import "swiper/css";
+  import "swiper/css/navigation";
+  //   import "swiper/css/pagination";
+  import "swiper/css/effect-creative";
+
+  import { delaySlider } from "../../../utils/variables";
+
+  const swiper = new Swiper(".mySwiper", {
+    // centeredSlides: true,
+    slidesPerView: 1,
+    grabCursor: true,
+    loop: true,
+    modules: [Autoplay, EffectCreative, Navigation],
+    autoplay: {
+      delay: delaySlider,
+      disableOnInteraction: true,
+      pauseOnMouseEnter: true,
+      reverseDirection: false,
+    },
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: ["-20%", 0, -1],
+      },
+      next: {
+        translate: ["100%", 0, 0],
+      },
+    },
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: 2,
+      },
+    },
+  });
+</script>
