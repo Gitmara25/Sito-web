@@ -30,7 +30,17 @@ content:
         label: Prezzo scontato
         type: string
         required: true
-
+  - name: impostazioniGlobali
+    label: Impostazioni Globali
+    path: src/contentPageCMS
+    filename: "global-settings.md"
+    type: collection
+    fields:
+      - name: dataScadenzaOfferte
+        label: Data Scadenza Offerte
+        type: date
+        required: true
+      
 media:
   input: public/images/offertePageCMS
   output: /images/offertePageCMS
