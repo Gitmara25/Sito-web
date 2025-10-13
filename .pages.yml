@@ -1,0 +1,37 @@
+content:
+  - name: offerte
+    label: Offerte
+    path: src/contentPageCMS
+    filename: "{fields.titolo}.md"
+    type: collection
+    fields:
+      - name: img
+        label: Immagine prodotto
+        type: image
+        required: true
+
+      - name: titolo
+        label: Titolo
+        type: string
+        required: true
+
+      - name: descrizione
+        label: Descrizione
+        type: string
+        description: Max 356 characters
+        required: true
+
+      - name: prezzoOriginale
+        label: Prezzo originale
+        type: string
+        required: true
+
+      - name: prezzoScontato
+        label: Prezzo scontato
+        type: string
+        required: true
+
+media:
+  input: public/images/offertePageCMS
+  output: /images/offertePageCMS
+  extensions: [png, webp, jpg, jpeg]
