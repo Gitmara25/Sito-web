@@ -1,46 +1,14 @@
-# Astro Starter Kit: Basics
+# PAGE CMS Per la modifica delle offerte
 
-```sh
-npm create astro@latest -- --template basics
-```
+Il deploy del sito è in modalità manuale.  
+Deploy significa pubblicare le modifiche fatte da pageCMS sul sito.  
+Per la natura dei siti statici, ogni qualvolta viene rilevata una modifica l'intero sito viene 'ricostruito' da zero.  
+Questo crea un dispendio di risorse che alla fine vanno a sottrarsi a quelle del piano gratuito, risultando nella chiusura del sito fino a fine mese, causa esaurimento crediti gratuiti.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Pubblicare le modifiche
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Una volta fatto l'accesso a page cms, ed apportato le modifiche necessarie, per poterle pubblicare bisogna andare su Netlify accedendo con l'account Github (che farà in automatico se l'accesso è già stato fatto una volta).  
+Cliccare sul sito.
+Cliccare su 'deploys'.
+Cliccare su 'trigger deploys', e 'Deploy Site'.
+Attendere, il sito sta venendo ricostruito ed inviato nei server del mondo.

@@ -1,0 +1,31 @@
+---
+import CardOfferte from "../components/CardOfferte.astro";
+
+export interface Props {
+  quantità?: number;
+}
+
+const allOfferte = await Astro.glob("../contentPageCMS/offerte/*.md");
+const { quantità = allOfferte.length } = Astro.props;
+---
+
+{
+  allOfferte.length > 0 ? (
+    allOfferte.slice(0, quantità).map((offerta) => {
+      const { img, titolo, descrizione, prezzoOriginale, prezzoScontato } =
+        offerta.frontmatter;
+
+      return (
+        <CardOfferte
+          img={img}
+          title={titolo || "Senza titolo"}
+          subtitle={descrizione || ""}
+          prezzoOriginale={prezzoOriginale || "0"}
+          prezzoScontato={prezzoScontato || "0"}
+        />
+      );
+    })
+  ) : (
+    <p class='mb-12 font-ibmplex-l'>Nessuna offerta disponibile al momento</p>
+  )
+}

@@ -4,6 +4,8 @@ import Button from "../components/Button.astro";
 import Card from "../components/Card.astro";
 import CardOfferte from "../components/CardOfferte.astro";
 import Servizi from "./index/components/Servizi.astro";
+import DataScadenza from "../components/DataScadenza.astro";
+import CardOfferteGenerator from "../components/CardOfferteGenerator.astro";
 ---
 
 <Layout metadescription='meta description for SEO, EDIT IT'>
@@ -136,30 +138,22 @@ import Servizi from "./index/components/Servizi.astro";
   <section class='margix py-12 bg-red-700 flex flex-col items-center gap-4'>
     <h2 class='text-center'>Offerte del momento</h2>
     <p class='mb-8 text-center'>
-      Affrettati, offerta a tempo limitato <span
-        class='px-4 py-2 bg-white text-red-700 ml-4 rounded-mara inline-block mt-2 sm:mt-0'
-        >30 Luglio 2025</span
-      >
+      Affrettati, offerta a tempo limitata
+      <DataScadenza />
     </p>
 
     <!-- <div class='flex flex-col sm:flex-row mb-8 gap-8 sm:gap-16'> -->
     <div
       class='grid grid-cols-1 sm:grid-cols-2 gap-16 items-start grid-rows-subgrid'
     >
-      <CardOfferte
+      <!-- <CardOfferte
         title='Set di sedie toscane'
         subtitle='6 Sedie di pelle e legno, legno e pelle, legno e pelle'
         prezzoOriginale='2599'
         prezzoScontato='1799'
         img='offerte.jpg'
-      />
-      <CardOfferte
-        title='Set di sedie toscane'
-        subtitle='6 Sedie di pelle e legno'
-        prezzoOriginale='2599'
-        prezzoScontato='1799'
-        img='offerte.jpg'
-      />
+      /> -->
+      <CardOfferteGenerator quantità={2} />
     </div>
     <Button type='2' to='offerte'>Scopri le offerte</Button>
   </section>
