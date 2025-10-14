@@ -1,7 +1,7 @@
 content:
   - name: offerte
     label: Offerte
-    path: src/contentPageCMS
+    path: src/contentPageCMS/offerte
     filename: "{fields.titolo}.md"
     type: collection
     fields:
