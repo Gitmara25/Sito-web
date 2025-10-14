@@ -4,6 +4,7 @@ import Button from "../../components/Button.astro";
 import Layout from "../../layouts/Layout.astro";
 import CardBenefit from "./components/CardBenefit.astro";
 import CardOfferteGenerator from "../../components/CardOfferteGenerator.astro";
+import DataScadenza from "../../components/DataScadenza.astro";
 ---
 
 <Layout metadescription='meta description for SEO, EDIT IT'>
@@ -11,10 +12,8 @@ import CardOfferteGenerator from "../../components/CardOfferteGenerator.astro";
     <div class='bg-red-700 py-4'>
       <h1 class='text-center'>Offerte</h1>
       <p class='mb-8 text-center'>
-        Affrettati, offerta a tempo limitato <span
-          class='px-4 py-2 bg-white text-red-700 ml-4 rounded-mara inline-block mt-2 sm:mt-0'
-          >30 Luglio 2025</span
-        >
+        Affrettati, offerta a tempo limitato
+        <DataScadenza />
       </p>
     </div>
 
