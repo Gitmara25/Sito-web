@@ -12,14 +12,17 @@ const { img, title, subtitle, prezzoOriginale, prezzoScontato } = Astro.props;
 const url = `/contatti?prod=${encodeURIComponent(title)}#contact-form-sito`;
 ---
 
-<a href={url} class='row-span-2 grid grid-rows-subgrid'>
-  <div
-    class='bg-white rounded-mara w-[16rem] lg:w-[20rem] xl:w-[24rem] grid grid-rows-subgrid row-span-2 gap-4'
+<div class='row-span-2 grid grid-rows-subgrid items-center justify-center'>
+  <a
+    href={url}
+    class='bg-white rounded-mara w-[15rem] lg:w-[20rem] xl:w-[24rem] row-span-2 gap-4 block'
   >
-    <div
-      class='rounded-mara px-8 pt-[70%] pb-[10%] xl:pt-[60%] bg-size-[140%] bg-center hover:bg-size-[130%] transition-[background-size] ease row-start-1'
-      style=`background-image: url('${img}');`
-    >
+    <div class='rounded-mara overflow-hidden row-start-1'>
+      <div
+        class='w-full pt-[70%] xl:pt-[60%] bg-cover bg-center hover:scale-110 transition-transform duration-300 ease-in-out'
+        style=`background-image: url('${img}');`
+      >
+      </div>
     </div>
     <div class='text-black pb-8 px-8 row-start-2 space-y-2'>
       <p class='font-ibmplex-m'>{title}</p>
@@ -31,5 +34,5 @@ const url = `/contatti?prod=${encodeURIComponent(title)}#contact-form-sito`;
         </p>
       </div>
     </div>
-  </div>
-</a>
+  </a>
+</div>

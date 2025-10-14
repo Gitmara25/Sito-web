@@ -11,11 +11,11 @@
     "label": "Arredamento",
     "link": "arredamenti",
     "children": [
-      { "label": "Cucine", "link": "#cucine" },
-      { "label": "Soggiorni", "link": "#soggiorni" },
-      { "label": "Bagni", "link": "#bagni" },
-      { "label": "Camere", "link": "#camere" },
-      { "label": "Camerette", "link": "#camerette" }
+      { "label": "Cucine", "link": "arredamenti#cucine" },
+      { "label": "Soggiorni", "link": "arredamenti#soggiorni" },
+      { "label": "Bagni", "link": "arredamenti#bagni" },
+      { "label": "Camere", "link": "arredamenti#camere" },
+      { "label": "Camerette", "link": "arredamenti#camerette" }
     ]
   },
   {
