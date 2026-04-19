@@ -1,24 +1,17 @@
 ---
-import CardOfferte from "./components/CardOfferte.astro";
 import Button from "../../components/Button.astro";
 import Layout from "../../layouts/Layout.astro";
-import CardBenefit from "./components/CardBenefit.astro";
 import CardOfferteGenerator from "../../components/CardOfferteGenerator.astro";
-import DataScadenza from "../../components/DataScadenza.astro";
 ---
 
 <Layout metadescription='meta description for SEO, EDIT IT'>
   <section>
-    <div class='bg-red-700 py-4'>
-      <h1 class='text-center'>Offerte</h1>
-      <p class='mb-8 text-center'>
-        Affrettati, offerta a tempo limitato
-        <DataScadenza />
-      </p>
-    </div>
+    <!-- <div class='bg-red-700 py-4'> -->
+    <!-- <h1 class='text-center'>Offerte</h1> -->
+    <!-- </div> -->
 
     <!-- Benefit -->
-    <div class='marginx flex gap-4 justify-around flex-wrap items-center'>
+    <!-- <div class='marginx flex gap-4 justify-around flex-wrap items-center'>
       <CardBenefit>
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -63,9 +56,9 @@ import DataScadenza from "../../components/DataScadenza.astro";
         <p class='font-ibmplex-m'>Consulenza del progetto</p>
         <p class='text-center'>Consulenza gratuita all'acquisto</p></CardBenefit
       >
-    </div>
+    </div> -->
 
-    <h2 class='text-center mt-16'>Prodotti in offerta</h2>
+    <h1 class='text-center mt-16'>Prodotti in offerta</h1>
     <p class='marginx text-center'>
       Una selezione curata dei nostri milgliori prodotti a prezzi eccezionali.
       Affrettati, le quantità sono limitate!
@@ -80,9 +73,8 @@ import DataScadenza from "../../components/DataScadenza.astro";
     <div class='marginx flex flex-col items-center gap-4 mt-32 pb-16'>
       <h2 class='text-center'>Non Perdere Queste Offerte!</h2>
       <p class='text-center max-w-[65ch]'>
-        Le nostre promozioni sono a tempo limitate e le quantità sono limitate.
-        Contattaci subito per non perdere l'opportunità di arredare la tua casa
-        a prezzi vantaggiosi.
+        Le nostre promozioni sono a quantità limitate. Contattaci subito per non
+        perdere l'opportunità di arredare la tua casa a prezzi vantaggiosi.
       </p>
       <Button type='1' to='/contatti'>Contattaci ora</Button>
     </div>

@@ -1,18 +1,15 @@
 ---
 import SvgWrapper from "./components/SvgWrapper.astro";
 import Layout from "../../layouts/Layout.astro";
-import NumeriContainer from "./components/NumeriContainer.astro";
 import ServiziContainer from "./components/ServiziContainer.astro";
-import TeamCard from "./components/TeamCard.astro";
 ---
 
 <Layout metadescription='meta description for SEO, EDIT IT'>
   <section class='marginx flex flex-col items-center pb-30'>
     <h1 class='text-center'>L'azienda</h1>
     <p class='text-center max-w-[50ch]'>
-      Da oltre vent'anni Mara Arredamenti trasforma le case in tutta Italia,
-      creando spazi che riflettono le personalità e gli stili di vita unici dei
-      nostri clienti.
+      Mara Arredamenti trasforma le case in tutta Italia, creando spazi che
+      riflettono le personalità e gli stili di vita unici dei nostri clienti.
     </p>
 
     <!-- storia -->
@@ -20,19 +17,16 @@ import TeamCard from "./components/TeamCard.astro";
       <div class='flex-1 flex flex-col'>
         <h2>La nostra storia</h2>
         <p>
-          Da generazioni ci occupiamo di design. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolor
+          Da oltre 30 anni per Mara Arredamenti l'obiettivo è semplice: aiutarti
+          a creare ambienti belli da vedere e comodi da vivere. Sappiamo che
+          arredare una stanza non signigica solo riempire uno spazio, ma creare
+          un posto dove stare bene con la famiglia e gli amici. Nel nostro
+          negozio non trovi solo tavoli, letti e cucine, ma persone pronte ad
+          ascoltarti. Ti aiutiamo a sceglierei materiali migliori e a sfruttare
+          bene ogni angoolo della tua casa, unendo la qualitò alla comnvenienza.
+          Seguiamo tutto noi: dal primo disegno fino al montaggio a casa tua,
+          con la cura che useremmo per casa nostra.
         </p>
-        <div
-          class='flex flex-col sm:flex-row gap-4 mt-4 sm:gap-8 self-baseline'
-        >
-          <NumeriContainer anni='25' inCosa='Anni di esperienza ' />
-          <NumeriContainer anni='10000' inCosa='Clienti soddisfatti' />
-        </div>
       </div>
       <div class='basis-1/2'>
         <img
@@ -92,23 +86,6 @@ import TeamCard from "./components/TeamCard.astro";
           arredi siano posizionati perfettamente e pronti all'uso.
         </p>
       </ServiziContainer>
-    </div>
-
-    <!-- Il team -->
-    <h2 class='mt-16 mb-4'>Il nostro team</h2>
-    <div class='flex flex-col sm:flex-row gap-16 items-center justify-center'>
-      <TeamCard
-        img='/images/persona-1.jpg'
-        nome='Alberto'
-        ruolo='Direttore vendite'
-        descrizione='Con oltre 15 anni di esperienza nel settore dell’arredamento'
-      />
-      <TeamCard
-        img='/images/persona-1.jpg'
-        nome='Alberto'
-        ruolo='Direttore vendite'
-        descrizione='Con oltre 15 anni di esperienza nel settore dell’arredamento'
-      />
     </div>
   </section>
 </Layout>

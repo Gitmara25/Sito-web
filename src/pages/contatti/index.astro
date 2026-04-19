@@ -11,7 +11,7 @@ import TextWrapper from "./components/TextWrapper.astro";
   const prod = params.get("prod");
   if (prod) {
     const messaggioElement = document.getElementById(
-      "messaggio"
+      "messaggio",
     ) as HTMLInputElement;
     if (messaggioElement) {
       messaggioElement.value = `Salve, sarei interessato a ${prod}`;
@@ -153,7 +153,14 @@ import TextWrapper from "./components/TextWrapper.astro";
             </TextWrapper>
           </ContattiWrapper>
         </div>
-        <img src='/images/google-maps.jpg' alt='google maps' />
+        <iframe
+          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.906671867595!2d12.1162552!3d45.491824099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ecbd47071b5eb%3A0x55a66f106a09aece!2sArredamenti%20Da.Ma.%20snc.%20(Mara%20Arredamenti)!5e0!3m2!1sen!2sit!4v1776599647324!5m2!1sen!2sit'
+          width='600'
+          height='450'
+          style='border:0;'
+          allowfullscreen=''
+          loading='lazy'
+          referrerpolicy='no-referrer-when-downgrade'></iframe>
       </div>
     </div>
   </section>

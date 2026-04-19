@@ -13,14 +13,14 @@ import CardOfferteGenerator from "../components/CardOfferteGenerator.astro";
   <section
     class='min-h-screen bg-[url(/images/landing.jpg)] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center gap-4'
   >
-    <h1 class='text-center leading-none marginx'>
-      Mara Arredamenti <span class='font-ibmplex-b'
-        ><br />stile e design per i tuoi interni</span
+    <h1 class='text-center leading-none marginx text-4xl md:text-8xl font-bold'>
+      MARA ARREDAMENTI <span class='font-ibmplex-l text-3xl md:text-4xl'
+        ><br />Stile e design per i tuoi interni</span
       >
     </h1>
     <p class='text-center marginx'>
-      Dal 1900, realizziamo soluzioni d'arredo su misura che coniugano
-      funzionalità e design sofisticato
+      Realizziamo soluzioni d'arredo su misura che coniugano funzionalità e
+      design sofisticato
     </p>
     <div class='flex flex-col sm:flex-row items-center gap-4 sm:gap-16 marginx'>
       <Button type='1' to='arredamenti'>Esplora la collezione</Button>
@@ -90,12 +90,15 @@ import CardOfferteGenerator from "../components/CardOfferteGenerator.astro";
       </div>
       <div class='flex flex-col gap-8 break-inside-avoid'>
         <p class='mt-8 lg:mt-4 text-justify'>
-          Da generazioni ci occupiamo di design. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolor
+          Da oltre 30 anni per Mara Arredamenti l'obiettivo è semplice: aiutarti
+          a creare ambienti belli da vedere e comodi da vivere. Sappiamo che
+          arredare una stanza non signigica solo riempire uno spazio, ma creare
+          un posto dove stare bene con la famiglia e gli amici.
+          <br /><br /> Nel nostro negozio non trovi solo tavoli, letti e cucine,
+          ma persone pronte ad ascoltarti. Ti aiutiamo a sceglierei materiali migliori
+          e a sfruttare bene ogni angoolo della tua casa, unendo la qualitò alla
+          comnvenienza. Seguiamo tutto noi: dal primo disegno fino al montaggio a
+          casa tua, con la cura che useremmo per casa nostra.
         </p>
         <div class='flex justify-around'>
           <Servizi>
@@ -137,10 +140,10 @@ import CardOfferteGenerator from "../components/CardOfferteGenerator.astro";
   <!-- offerte -->
   <section class='margix py-12 bg-red-700 flex flex-col items-center gap-4'>
     <h2 class='text-center'>Offerte del momento</h2>
-    <p class='mb-8 text-center'>
+    <!-- <p class='mb-8 text-center'>
       Affrettati, offerta a tempo limitata
       <DataScadenza />
-    </p>
+    </p> -->
 
     <!-- <div class='flex flex-col sm:flex-row mb-8 gap-8 sm:gap-16'> -->
     <div
