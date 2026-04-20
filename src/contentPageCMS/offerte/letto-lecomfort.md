@@ -1,5 +1,5 @@
 ---
 img: /images/offertePageCMS/Letto LeComfort.jpg
 titolo: Letto Lecomfort
-prezzoOriginale: "1300"
+prezzoScontato: "1300"
 ---

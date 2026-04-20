@@ -24,12 +24,12 @@ content:
       - name: prezzoOriginale
         label: Prezzo originale
         type: string
-        required: true
+        required: false
 
       - name: prezzoScontato
         label: Prezzo scontato
         type: string
-        required: false
+        required: true
   - name: impostazioniGlobali
     label: Impostazioni Globali
     path: src/contentPageCMS

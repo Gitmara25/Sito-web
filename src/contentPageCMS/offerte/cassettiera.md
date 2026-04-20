@@ -1,5 +1,5 @@
 ---
 img: /images/offertePageCMS/Cassettiera.jpg
 titolo: Cassettiera
-prezzoOriginale: "950"
+prezzoScontato: "950"
 ---
