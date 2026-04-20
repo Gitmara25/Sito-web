@@ -19,7 +19,7 @@ content:
         label: Descrizione
         type: string
         description: Max 356 characters
-        required: true
+        required: false
 
       - name: prezzoOriginale
         label: Prezzo originale
@@ -29,7 +29,7 @@ content:
       - name: prezzoScontato
         label: Prezzo scontato
         type: string
-        required: true
+        required: false
   - name: impostazioniGlobali
     label: Impostazioni Globali
     path: src/contentPageCMS
