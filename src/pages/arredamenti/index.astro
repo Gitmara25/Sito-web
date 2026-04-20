@@ -15,9 +15,10 @@ import SliderArredamenti from "./components/SliderArredamenti.astro";
   metadescription='Scopri la nostra vasta collezione di mobili e accessori per la casa.'
 >
   <section id='arredamenti'>
-    <div
+    <!-- <div
       class='bg-[url("/images/landing2.jpg")] bg-center bg-cover flex flex-col gap-4 items-center py-8'
-    >
+    > -->
+    <div class='bg-center bg-cover flex flex-col gap-4 items-center py-8'>
       <h1 class='text-center'>Arredamenti</h1>
       <p class='text-center'>
         Scopri la nostra vasta collezione di mobili e accessori per la casa.
@@ -32,20 +33,37 @@ import SliderArredamenti from "./components/SliderArredamenti.astro";
           <CardArredamenti
             title='Cucina'
             description='Il cuore pulsante della tua casa'
-            img='card-cucina.webp'
+            img='cucine/cucina-1.jpg'
           />
           <CardArredamenti
             title='Cucina'
             description='Il cuore pulsante della tua casa'
-            img='card-cucina.webp'
+            img='cucine/cucina-2.jpg'
           />
           <CardArredamenti
             title='Cucina'
             description='Il cuore pulsante della tua casa'
-            img='card-cucina.webp'
+            img='cucine/cucina-3.jpg'
           />
         </ArredamentiCardContainer>
-        <SliderArredamenti />
+        <SliderArredamenti
+          imgPath={[
+            "cucine/cucina-1.jpg",
+            "cucine/cucina-2.jpg",
+            "cucine/cucina-3.jpg",
+            "cucine/cucina-4.jpg",
+            "cucine/cucina-5.jpg",
+            "cucine/cucina-6.jpg",
+          ]}
+          alt={[
+            "cucina-1",
+            "cucina-2",
+            "cucina-3",
+            "cucina-4",
+            "cucina-5",
+            "cucina-6",
+          ]}
+        />
       </div>
 
       <!-- soggiorni -->
@@ -55,20 +73,37 @@ import SliderArredamenti from "./components/SliderArredamenti.astro";
           <CardArredamenti
             title='Soggiorno'
             description='Spazi disegnati per il relax e connessioni'
-            img='card-soggiorno.webp'
+            img='soggiorni/soggiorno-3.jpg'
           />
           <CardArredamenti
             title='Soggiorno'
             description='Spazi disegnati per il relax e connessioni'
-            img='card-soggiorno.webp'
+            img='soggiorni/soggiorno-5.jpg'
           />
           <CardArredamenti
             title='Soggiorno'
             description='Spazi disegnati per il relax e connessioni'
-            img='card-soggiorno.webp'
+            img='soggiorni/soggiorno-6.jpg'
           />
         </ArredamentiCardContainer>
-        <SliderArredamenti />
+        <SliderArredamenti
+          imgPath={[
+            "soggiorni/soggiorno-1.jpg",
+            "soggiorni/soggiorno-2.jpg",
+            "soggiorni/soggiorno-3.jpg",
+            "soggiorni/soggiorno-4.jpg",
+            "soggiorni/soggiorno-5.jpg",
+            "soggiorni/soggiorno-6.jpg",
+          ]}
+          alt={[
+            "soggiorno-1",
+            "soggiorno-2",
+            "soggiorno-3",
+            "soggiorno-4",
+            "soggiorno-5",
+            "soggiorno-6",
+          ]}
+        />
       </div>
 
       <!-- bagni -->
@@ -78,20 +113,37 @@ import SliderArredamenti from "./components/SliderArredamenti.astro";
           <CardArredamenti
             title='Bagno'
             description='La tua oasi di benessere personale '
-            img='card-bagno.jpg'
+            img='bagni/bagno-1.jpg'
           />
           <CardArredamenti
             title='Bagno'
             description='La tua oasi di benessere personale'
-            img='card-bagno.jpg'
+            img='bagni/bagno-2.jpg'
           />
           <CardArredamenti
             title='Bagno'
             description='La tua oasi di benessere personale'
-            img='card-bagno.jpg'
+            img='bagni/bagno-3.jpg'
           />
         </ArredamentiCardContainer>
-        <SliderArredamenti />
+        <SliderArredamenti
+          imgPath={[
+            "bagni/bagno-1.jpg",
+            "bagni/bagno-2.jpg",
+            "bagni/bagno-3.jpg",
+            "bagni/bagno-4.jpg",
+            "bagni/bagno-5.jpg",
+            "bagni/bagno-6.jpg",
+          ]}
+          alt={[
+            "bagno-1",
+            "bagno-2",
+            "bagno-3",
+            "bagno-4",
+            "bagno-5",
+            "bagno-6",
+          ]}
+        />
       </div>
 
       <!-- camere -->
@@ -114,7 +166,24 @@ import SliderArredamenti from "./components/SliderArredamenti.astro";
             img='card-camera.jpg'
           />
         </ArredamentiCardContainer>
-        <SliderArredamenti />
+        <SliderArredamenti
+          imgPath={[
+            "bagni/bagno-1.jpg",
+            "bagni/bagno-2.jpg",
+            "bagni/bagno-3.jpg",
+            "bagni/bagno-4.jpg",
+            "bagni/bagno-5.jpg",
+            "bagni/bagno-6.jpg",
+          ]}
+          alt={[
+            "bagno-1",
+            "bagno-2",
+            "bagno-3",
+            "bagno-4",
+            "bagno-5",
+            "bagno-6",
+          ]}
+        />
       </div>
 
       <!-- camerette -->
@@ -124,20 +193,37 @@ import SliderArredamenti from "./components/SliderArredamenti.astro";
           <CardArredamenti
             title='Cameretta'
             description='Spazi che crescono coi vostri figli'
-            img='card-cameretta.jpg'
+            img='camerette/camerette-1.jpg'
           />
           <CardArredamenti
             title='Cameretta'
             description='Spazi che crescono coi vostri figli'
-            img='card-cameretta.jpg'
+            img='camerette/camerette-2.jpg'
           />
           <CardArredamenti
             title='Cameretta'
             description='Spazi che crescono coi vostri figli'
-            img='card-cameretta.jpg'
+            img='camerette/camerette-3.jpg'
           />
         </ArredamentiCardContainer>
-        <SliderArredamenti />
+        <SliderArredamenti
+          imgPath={[
+            "camerette/camerette-1.jpg",
+            "camerette/camerette-2.jpg",
+            "camerette/camerette-3.jpg",
+            "camerette/camerette-4.jpg",
+            "camerette/camerette-5.jpg",
+            "camerette/camerette-6.jpg",
+          ]}
+          alt={[
+            "camerette-1",
+            "camerette-2",
+            "camerette-3",
+            "camerette-4",
+            "camerette-5",
+            "camerette-6",
+          ]}
+        />
       </div>
 
       <!-- complementi -->
@@ -160,7 +246,24 @@ import SliderArredamenti from "./components/SliderArredamenti.astro";
             img='card-complementi.jpg'
           />
         </ArredamentiCardContainer>
-        <SliderArredamenti />
+        <SliderArredamenti
+          imgPath={[
+            "camerette/camerette-1.jpg",
+            "camerette/camerette-2.jpg",
+            "camerette/camerette-3.jpg",
+            "camerette/camerette-4.jpg",
+            "camerette/camerette-5.jpg",
+            "camerette/camerette-6.jpg",
+          ]}
+          alt={[
+            "camerette-1",
+            "camerette-2",
+            "camerette-3",
+            "camerette-4",
+            "camerette-5",
+            "camerette-6",
+          ]}
+        />
       </div>
     </div>
   </section>
