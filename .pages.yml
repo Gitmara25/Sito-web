@@ -29,7 +29,7 @@ content:
       - name: prezzoScontato
         label: Prezzo scontato
         type: string
-        required: true
+        required: false
   - name: impostazioniGlobali
     label: Impostazioni Globali
     path: src/contentPageCMS
