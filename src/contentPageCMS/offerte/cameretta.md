@@ -1,5 +1,5 @@
 ---
 img: /images/offertePageCMS/Cameretta.jpg
 titolo: Cameretta
-prezzoOriginale: "1350"
+prezzoScontato: "1350"
 ---
