@@ -26,12 +26,16 @@ const url = `/contatti?prod=${encodeURIComponent(title)}#contact-form-sito`;
     </div>
     <div class='text-black pb-8 px-8 row-start-2 space-y-2'>
       <p class='font-ibmplex-m'>{title}</p>
-      <p>{subtitle}</p>
+      <p>{subtitle ?? ""}</p>
       <div class='flex gap-4 items-center'>
         <p class='font-ibmplex-b'>{prezzoScontato}€</p>
-        <p class='font-ibmplex-l line-through text-gray-800 text-sm'>
-          {prezzoOriginale}€
-        </p>
+        {
+          prezzoOriginale && (
+            <p class='font-ibmplex-l line-through text-gray-800 text-sm'>
+              {prezzoOriginale}€
+            </p>
+          )
+        }
       </div>
     </div>
   </a>
