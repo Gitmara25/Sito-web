@@ -1,5 +1,5 @@
 ---
 img: /images/offertePageCMS/Cucina completa.jpg
 titolo: Cucina completa
-prezzoOriginale: "9150"
+prezzoScontato: "9150"
 ---
