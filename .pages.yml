@@ -19,7 +19,7 @@ content:
         label: Descrizione
         type: string
         description: Max 356 characters
-        required: true
+        required: false
 
       - name: prezzoOriginale
         label: Prezzo originale
