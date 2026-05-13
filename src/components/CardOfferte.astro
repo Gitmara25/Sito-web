@@ -12,7 +12,7 @@ const { img, title, subtitle, prezzoOriginale, prezzoScontato } = Astro.props;
 const url = `/contatti?prod=${encodeURIComponent(title)}#contact-form-sito`;
 ---
 
-<div class='row-span-2 grid grid-rows-subgrid items-center justify-center'>
+<!-- <div class='row-span-2 grid grid-rows-subgrid items-center justify-center'>
   <a
     href={url}
     class='bg-white rounded-mara w-[15rem] lg:w-[20rem] xl:w-[24rem] row-span-2 gap-4 block'
@@ -22,6 +22,39 @@ const url = `/contatti?prod=${encodeURIComponent(title)}#contact-form-sito`;
         class='w-full pt-[70%] xl:pt-[60%] bg-cover bg-center hover:scale-110 transition-transform duration-300 ease-in-out'
         style=`background-image: url('${img}');`
       >
+      </div>
+    </div>
+    <div class='text-black pb-8 px-8 row-start-2 space-y-2'>
+      <p class='font-ibmplex-m'>{title}</p>
+      <p>{subtitle ?? ""}</p>
+      <div class='flex gap-4 items-center'>
+        <p class='font-ibmplex-b'>{prezzoScontato}€</p>
+        {
+          prezzoOriginale && (
+            <p class='font-ibmplex-l line-through text-gray-800 text-sm'>
+              {prezzoOriginale}€
+            </p>
+          )
+        }
+      </div>
+    </div>
+  </a>
+</div> -->
+<div class='row-span-2 grid grid-rows-subgrid items-center justify-center'>
+  <a
+    href={url}
+    class='bg-white rounded-mara w-[15rem] lg:w-[20rem] xl:w-[24rem] row-span-2 gap-4 block'
+  >
+    <div class='rounded-mara overflow-hidden row-start-1'>
+      <div
+        class='rounded-mara max-h-[30rem] aspect-square group overflow-hidden flex flex-col justify-end relative'
+      >
+        <img
+          class='rounded-mara transition-transform duration-300 group-hover:scale-110 z-1 brightness-65 absolute top-0 object-cover w-full h-full'
+          loading='lazy'
+          src={img}
+          alt={img}
+        />
       </div>
     </div>
     <div class='text-black pb-8 px-8 row-start-2 space-y-2'>

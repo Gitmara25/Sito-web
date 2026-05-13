@@ -9,14 +9,29 @@ export interface Props {
 const { img, title, subtitle, to } = Astro.props;
 ---
 
-<a href={to}>
+<!-- <a href={to}>
   <div
     class='rounded-mara px-8 pt-[70%] pb-[10%] xl:pt-[60%] bg-size-[170%] bg-center hover:bg-size-[150%] transition-[background-size] ease'
     style={`background-image: 
       linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.6) 63%),
       url('/images/${img}');`}
   >
+    <img src=`/images/${img}` alt={img} />
     <p class='font-ibmplex-m'>{title}</p>
     <p>{subtitle}</p>
+  </div>
+</a> -->
+<a href={to}>
+  <div
+    class='rounded-mara max-h-[30rem] aspect-square group overflow-hidden flex flex-col justify-end relative'
+  >
+    <img
+      class='rounded-mara transition-transform duration-300 group-hover:scale-110 -z-1 brightness-65 absolute top-0 object-cover w-full h-full'
+      loading='lazy'
+      src=`/images/${img}`
+      alt={img}
+    />
+    <p class='font-ibmplex-m ml-4'>{title}</p>
+    <p class='ml-4 mb-8'>{subtitle}</p>
   </div>
 </a>

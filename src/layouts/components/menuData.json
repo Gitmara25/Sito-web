@@ -15,7 +15,8 @@
       { "label": "Soggiorni", "link": "arredamenti#soggiorni" },
       { "label": "Bagni", "link": "arredamenti#bagni" },
       { "label": "Camere", "link": "arredamenti#camere" },
-      { "label": "Camerette", "link": "arredamenti#camerette" }
+      { "label": "Camerette", "link": "arredamenti#camerette" },
+      { "label": "Divani", "link": "arredamenti#divani" }
     ]
   },
   {
