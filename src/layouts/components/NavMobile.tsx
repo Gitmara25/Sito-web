@@ -27,7 +27,7 @@ export default function NavMobile({
                       {e.children.map((child) => (
                         <a
                           key={child.label}
-                          href={child.link}
+                          href={`/${child.link}`}
                           className="block py-2 pr-8 pl-8 text-white transition-colors duration-150 hover:bg-gray-100 hover:text-red-700"
                         >
                           {child.label}

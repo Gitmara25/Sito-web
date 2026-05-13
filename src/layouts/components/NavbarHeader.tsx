@@ -35,7 +35,7 @@ export default function NavbarHeader() {
                   {e.children.map((child) => (
                     <a
                       key={child.label}
-                      href={child.link}
+                      href={`/${child.link}`}
                       className="block px-4 py-2 text-sm text-white transition-colors duration-150 hover:bg-gray-100 hover:text-red-700"
                     >
                       {child.label}
