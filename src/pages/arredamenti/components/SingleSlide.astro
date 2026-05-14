@@ -26,6 +26,6 @@ const { imgPath, alt } = Astro.props;
 </style>
 
 <div class='swiper-slide'>
-  <img src=`images/${imgPath ?? ""}` alt={alt ?? ""} loading='lazy' />
+  <img src=`/images/${imgPath ?? ""}` alt={alt ?? ""} loading='lazy' />
   <div class='swiper-lazy-preloader'></div>
 </div>
