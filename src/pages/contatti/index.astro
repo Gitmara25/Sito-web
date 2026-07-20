@@ -1,8 +1,8 @@
 ---
-import SvgWrapper from "./components/SvgWrapper.astro";
+import SvgWrapper from "../../components/contatti/SvgWrapper.astro";
 import Layout from "../../layouts/Layout.astro";
-import ContattiWrapper from "./components/ContattiWrapper.astro";
-import TextWrapper from "./components/TextWrapper.astro";
+import ContattiWrapper from "../../components/contatti/ContattiWrapper.astro";
+import TextWrapper from "../../components/contatti/TextWrapper.astro";
 ---
 
 <script>
@@ -56,7 +56,7 @@ import TextWrapper from "./components/TextWrapper.astro";
       <div class='flex-1 flex flex-col'>
         <h2>Inviaci un messaggio</h2>
         <form
-          action='#'
+          data-netlify='true'
           id='contact-form-sito'
           method='post'
           class='grid grid-cols-2 gap-4 flex-1'

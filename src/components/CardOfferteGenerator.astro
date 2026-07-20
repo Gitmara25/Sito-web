@@ -1,11 +1,26 @@
 ---
 import CardOfferte from "../components/CardOfferte.astro";
+import type { MarkdownInstance } from "astro";
 
 export interface Props {
   quantità?: number;
 }
 
-const allOfferte = await Astro.glob("../contentPageCMS/offerte/*.md");
+type OffertaFrontmatter = {
+  img: string;
+  titolo: string;
+  descrizione: string;
+  prezzoOriginale: string;
+  prezzoScontato: string;
+};
+
+const allOfferte = Object.values(
+  import.meta.glob<MarkdownInstance<OffertaFrontmatter>>(
+    "../contentPageCMS/offerte/*.md",
+    { eager: true },
+  ),
+);
+
 const { quantità = allOfferte.length } = Astro.props;
 ---
 
