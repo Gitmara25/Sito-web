@@ -7,16 +7,17 @@ Questo crea un dispendio di risorse che alla fine vanno a sottrarsi a quelle del
 
 ## Pubblicare le modifiche
 
-Una volta fatto l'accesso a page cms, ed apportato le modifiche necessarie, per poterle pubblicare bisogna andare su Netlify accedendo con l'account Github (che farà in automatico se l'accesso è già stato fatto una volta).  
-Cliccare sul sito.
-Cliccare su 'deploys'.
-Cliccare su 'activate builds'.
-Cliccare su 'trigger deploys', e 'Deploy Project'.
+Una volta fatto l'accesso a page cms (https://pagescms.org/), ed apportato le modifiche necessarie, per poterle pubblicare bisogna andare su Netlify accedendo con l'account Github (che farà in automatico se l'accesso è già stato fatto una volta).  
+1. Cliccare sul sito.
+2.  Cliccare su 'deploys'.
+3.  Cliccare su 'activate builds'.
+4.  Cliccare su 'trigger deploys', e 'Deploy Project'.
 Attendere, il sito sta venendo ricostruito ed inviato nei server del mondo.
 
 Per disabilitare il deploy:  
-Cliccare sul sito.
-Cliccare su 'Project configuration'.
-Cliccare su 'Build & deploy'.
-Nella sezione Build Status cliccare su 'stopped builds'.
+1. Cliccare sul sito.
+2. Cliccare su 'Project configuration'.
+3. Cliccare su 'Build & deploy'.
+4. Nella sezione Build Status cliccare su 'stopped builds'.
 
+### Vanno sempre abilitate e poi disabilitate
